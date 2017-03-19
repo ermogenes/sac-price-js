@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ferramenta de comparação SAC/PRICE">
+    <meta name="author" content="Ermogenes Palacio">
+    <link rel="shortcut icon" href="static/img/logo.png">
+
+    <title>Ferramenta de comparação SAC/PRICE</title>
+
+        <link href="static/lib/normalize/normalize.css" rel="stylesheet" />
+        <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="static/themes/bootstrap.bootswatch.lumen.min.css" rel="stylesheet" />
+        <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="static/lib/html5shiv/html5shiv.min.js"></script>
+          <script src="static/lib/respondjs/respond.min.js"></script>
+        <[endif]-->
+
+        <link href="static/css/main.css" rel="stylesheet" />
+        <link href="static/css/sticky-footer.css" rel="stylesheet" />
+
+        <style type="text/css">
+
+			img.logo-lg{width: 175px;}
+			img.logo-md{width: 150px;}
+			img.logo-sm{width: 120px;}
+			img.logo-xs{width: 100px;}
+			
+			h1.titulo-lg{font-size: 3em}
+			h1.titulo-md{font-size: 2em}
+			h1.titulo-sm{font-size: 2em}
+			h1.titulo-xs{font-size: 1.5em}
+			
+			.container{min-width: 320px}
+
+			.title-cell{
+				height: auto;
+			}
+			
+			div{
+				border: 0px solid red;
+			}
+			
+        </style>
+  </head>
+
+<body>
+	<a href="#content" class="sr-only">Saltar para o conteúdo</a>
+	
+	<!-- Begin page content -->
+	<div class="container" id="content">
+		<div class="page-header">
+			<div class="row">
+				<div class="hidden-xs col-sm-3 title-cell" style="padding-top: 0px;">
+					<img src="static/img/logo.png" class="logo-xs hidden-lg hidden-md hidden-sm visible-xs" alt="logo deste site" />
+					<img src="static/img/logo.png" class="logo-sm hidden-lg hidden-md visible-sm hidden-xs" alt="logo deste site" />
+					<img src="static/img/logo.png" class="logo-md hidden-lg visible-md hidden-sm hidden-xs" alt="logo deste site" />
+					<img src="static/img/logo.png" class="logo-lg h-lg hidden-md hidden-sm hidden-xs" 		alt="logo deste site" />
+				</div>
+				<div class="col-xs-8 col-sm-6 title-cell" style="padding-top: 0px;">
+					<h1 class="titulo-xs hidden-lg hidden-md hidden-sm visible-xs">Comparação SAC/PRICE</h1>
+					<h1 class="titulo-sm hidden-lg hidden-md visible-sm hidden-xs">Comparação SAC/PRICE</h1>
+					<h1 class="titulo-md hidden-lg visible-md hidden-sm hidden-xs">Comparação SAC/PRICE</h1>
+					<h1 class="titulo-lg visible-lg hidden-md hidden-sm hidden-xs">Comparação SAC/PRICE</h1>
+				</div>
+				<div class="col-xs-4 col-sm-3 title-cell" style="padding-top: 20px;">
+					<a href="http://www.prefeitura.sp.gov.br/">
+						<img src="static/img/logo-univesp.png" class="logo-xs hidden-lg hidden-md hidden-sm visible-xs" alt="logo Univesp" />
+						<img src="static/img/logo-univesp.png" class="logo-sm hidden-lg hidden-md visible-sm hidden-xs" alt="logo Univesp" />
+						<img src="static/img/logo-univesp.png" class="logo-md hidden-lg visible-md hidden-sm hidden-xs" alt="logo Univesp" />
+						<img src="static/img/logo-univesp.png" class="logo-lg visible-lg hidden-md hidden-sm hidden-xs" alt="logo Univesp" />
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<div class="conteudo-area">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="lead">
+								Este trabalho é uma entrega para obtenção do diploma de Engenharia da Univesp, Projeto Integrador (Bimestre 11).
+							</p>
+						</div>
+                        
+						<div class="col-xs-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">Comparação entre tabela SAC e tabela PRICE.</h4>
+							</div>
+							<div class="panel-body">
+
+
+								<form class="form-horizontal">
+								<fieldset>
+
+								<!-- Form Name -->
+								<legend>Cálculo do financiamento</legend>
+
+								<!-- Prepended text-->
+								<div class="form-group">
+								<label class="col-md-4 control-label" for="valor">Valor total do financiamento</label>
+								<div class="col-md-4">
+								<div class="input-group">
+								<span class="input-group-addon">R$</span>
+								<input id="valor" name="valor" class="form-control" placeholder="ex.: 200.000,00" type="text" required="">
+								</div>
+
+								</div>
+								</div>
+
+								<!-- Button Drop Down -->
+								<div class="form-group">
+								<label class="col-md-4 control-label" for="buttondropdown">Quantidade de períodos</label>
+								<div class="col-md-4">
+								<div class="input-group">
+								<input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="ex.: 48" type="text" required="">
+								<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								Períodos
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu pull-right">
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">12</a></li>
+								<li><a href="#">24</a></li>
+								<li><a href="#">36</a></li>
+								<li><a href="#">48</a></li>
+								<li><a href="#">60</a></li>
+								<li><a href="#">72</a></li>
+								</ul>
+								</div>
+								</div>
+								</div>
+								</div>
+
+								<!-- Appended Input-->
+								<div class="form-group">
+								<label class="col-md-4 control-label" for="taxa">Taxa de juros</label>
+								<div class="col-md-4">
+								<div class="input-group">
+								<input id="taxa" name="taxa" class="form-control" placeholder="ex.: 12,5" type="text" required="">
+								<span class="input-group-addon">%</span>
+								</div>
+
+								</div>
+								</div>
+								<!-- Multiple Radios -->
+								<div class="form-group">
+								<label class="col-md-4 control-label" for="tipo">Tipo de simulação</label>
+								<div class="col-md-4">
+								<div class="radio">
+								<label for="tipo-0">
+								<input type="radio" name="tipo" id="tipo-0" value="AMBOS" checked="checked">
+								Comparativo
+								</label>
+								</div>
+								<div class="radio">
+								<label for="tipo-1">
+								<input type="radio" name="tipo" id="tipo-1" value="SAC">
+								Somente SAC
+								</label>
+								</div>
+								<div class="radio">
+								<label for="tipo-2">
+								<input type="radio" name="tipo" id="tipo-2" value="PRICE">
+								Somente PRICE
+								</label>
+								</div>
+								</div>
+								</div>
+
+								<!-- Button -->
+								<div class="form-group">
+								<label class="col-md-4 control-label" for="go">Simular financiamento</label>
+								<div class="col-md-4">
+								<button id="go" name="go" class="btn btn-primary">Iniciar!</button>
+								</div>
+								</div>
+
+								</fieldset>
+								</form>
+					  
+					  
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+
+
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8">
+					<p>
+						Desenvolvido pelo grupo Santos SM.2
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="static/lib/bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>
